@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap'); /* Fonte com toque floral */
+
+:root {
+    --rosa-sakura: #F9D5D3;
+    --rosa-profundo: #CB6D90;
+    --creme-suave: #FFF0F5;
+    --sombra-suave: rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--creme-suave);
+    color: #5C3A3A;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--rosa-sakura);
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+.nav-link {
+    color: var(--rosa-profundo);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #A64F6B;
+}
+
+.inicio-fundo {
+    background-image: url('img/sakura-bg.jpg'); /* imagem temática de sakura */
+    background-size: cover;
+    background-position: center;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px var(--sombra-suave);
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--sombra-suave);
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.botao-inicio {
+    background-color: var(--rosa-profundo);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+    font-weight: bold;
+    box-shadow: 0 4px 6px var(--sombra-suave);
+    transition: background-color 0.3s ease;
+}
+
+.botao-inicio:hover {
+    background-color: #A64F6B;
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--rosa-sakura);
+}
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/sakura-top.png') top right no-repeat,
+                url('img/sakura-bottom.png') bottom left no-repeat;
+    background-size: 180px 180px;
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--rosa-profundo);
+}
+
+#galeria {
+    background-color: var(--creme-suave);
+}
+
+.fundo-galeria {
+    background: url('img/sakura-corner.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-image: url('img/sakura-bg.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--sombra-suave);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: var(--rosa-profundo);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.form-control {
+    background-color: #FCEEF1;
+    border: 1px solid var(--rosa-sakura);
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+    background-color: var(--rosa-sakura);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #5C3A3A;
+}
+
+.apresenta-lista {
+    display: none;
+}
